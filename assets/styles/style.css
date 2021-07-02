@@ -1,0 +1,69 @@
+body {
+    display: grid;
+    grid-template-rows: 200px 100px;
+
+    background-color: aqua;
+    grid-template-areas:
+        " wrapper wrapper wrapper wrapper"
+        "wr_2 wr_2 wr_2 wr_2 ";
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+
+}
+
+.wrapper {
+    grid-area: wrapper;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 100px 30% 1fr;
+    grid-template-areas:
+        "wrapper_1 wrapper_2 wrapper_3"
+        "wrapper_1 wrapper_2 wrapper_3"
+        "wrapper_1 wrapper_2 wrapper_3";
+    gap: 20px;
+
+}
+
+.wr_2 {
+    grid-area: wr_2;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 100px 30% 1fr;
+    grid-template-areas:
+        "wrapper_4 wrapper_5 wrapper_6"
+        "wrapper_4 wrapper_5 wrapper_6"
+        "wrapper_4 wrapper_5 wrapper_6";
+    gap: 20px;
+}
+
+.wrapper_1 {
+    grid-area: wrapper_1;
+    border: 1px solid white;
+
+}
+
+.wrapper_2 {
+    grid-area: wrapper_2;
+    border: 1px solid white;
+}
+
+.wrapper_3 {
+    grid-area: wrapper_3;
+    border: 1px solid white;
+}
+
+.wrapper_4 {
+    grid-area: wrapper_4;
+    border: 1px solid white;
+}
+
+.wrapper_5 {
+    grid-area: wrapper_5;
+    border: 1px solid white;
+}
+
+.wrapper_6 {
+    grid-area: wrapper_6;
+    border: 1px solid white;
+}
